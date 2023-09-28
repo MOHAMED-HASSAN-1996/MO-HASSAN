@@ -1,0 +1,747 @@
+.main {
+    background-color: rgb(58, 58, 58);
+    width: 100%;
+
+
+}
+
+.test {
+    background-color: rgb(0, 125, 134);
+    width: 100%;
+    margin-top: 40px;
+    color: rgb(255, 255, 255);
+    line-height: 15rem;
+    font-size: 80px;
+    text-align: center;
+    position: relative;
+}
+
+.mean2 {
+    counter-increment: hamo;
+    position: relative;
+
+}
+
+.mean2::before {
+    content: counter(hamo);
+    line-height: initial;
+    font-size: 50px;
+    left: 5%;
+ -webkit-text-stroke: 2px;
+    top: 0;
+    width: 50px;
+    background-color: #00a6c4;
+    position: absolute;
+    z-index: 5;
+  color: var(--main_color1);
+
+}
+
+/* https://unused-css.com/tools/clip-path-generator */
+/* موقع بيعملك clipPath   ممكن تضيفه في الصورة */
+/* بس عاوزة تظبيط منك شوية  */
+.card {
+    width: 300px;
+    height: 300px;
+
+    position: relative;
+    box-shadow: 5px 5px 0px 1px rgb(0, 204, 255), 10px 10px 0px 1px rgb(255, 0, 0), -5px -5px 0px 3px rgb(0, 255, 76), -10px -10px 0px 3px rgb(255, 51, 0);
+    /*  
+    -webkit-text-stroke: 7px;
+    /* بيكبر اكتر من البولد */
+    background: rgb(0, 0, 0);
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+}
+
+.card2 {
+    width: 300px;
+    height: 300px;
+
+    position: relative;
+    -webkit-text-stroke: 7px;
+}
+
+.card2 p {
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(2px);
+    background-color: rgba(51, 51, 51, 0);
+}
+
+.card2>img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+}
+
+.card3 {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    -webkit-text-stroke: 7px;
+    perspective: 1000px;
+
+}
+
+.card3::after {
+    content: "";
+    clip-path: polygon(evenodd, 46.5% 0%, 46.5% 0%, 100% 100%, 0% 100%, 8.91% 94.45%, 46.5% 14.11%, 90.01% 94.45%, 8.91% 94.45%, 0% 100%);
+    background-color: #F4D352;
+
+    bottom: 0;
+
+    width: 140%;
+    height: 120%;
+    position: absolute;
+    animation-name: hamo-d;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-duration: 3s;
+    animation-play-state: running;
+    z-index: -2;
+    opacity: 0;
+    transform-style: preserve-3d;
+}
+
+/*
+@keyframes hamo-d {
+
+   0% {
+        transform: rotatez(60deg) translatey(60px) translatex(50px);
+        transform-origin: 70%;
+        background-color: #f8e808;
+
+        z-index: -2;
+
+    }
+
+    50% {
+        transform: rotatez(80deg) translatey(-50px) translatex(80px);
+        transform-origin: 70%;
+        z-index: -2;
+        background-color: #ffffff;
+    }
+
+    100% {
+        transform: rotatez(60deg) translatey(60px) translatex(50px);
+        transform-origin: 70%;
+        z-index: -2;
+
+        background-color: #f8e808;
+    } */
+/* 0% {
+        transform: rotate(45deg) rotateX(-25deg) rotateY(25deg);
+        z-index: -2;
+
+       }
+      
+       50% {
+        transform: rotate(45deg) rotateX(-385deg) rotateY(25deg);
+        z-index: -2;
+
+       }
+      
+       100% {
+        transform: rotate(45deg) rotateX(-385deg) rotateY(385deg);
+        z-index: -2;
+
+       } */
+/* @keyframes  {
+    0% {
+        clip-path: polygon(22.59% 16.9%, 79.42% 25.68%, 69.09% 80.39%, 13.81% 73.73%);
+    }
+    30% {
+    clip-path: polygon(46.63% 22.3%, 75.22% 26.83%, 97.54% 48.92%, 47.2% 84.76%);
+   
+    }
+
+    70% {
+            clip-path: polygon(-16.37% 32.3%, 5.22% 40.83%, 43.54% 18.92%, 44.2% 75.76%);
+           
+    }
+    100% {
+        clip-path: polygon(22.59% 16.9%, 79.42% 25.68%, 69.09% 80.39%, 13.81% 73.73%);
+        
+    }
+}   
+ */
+.card3 p {
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(15, 15, 15, 0.884);
+
+
+}
+
+.card3>img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    filter: drop-shadow(5px -5px 2px #0e0e0e);
+}
+
+#page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#h3 {
+    color: white;
+    font-size: 70px;
+    filter: drop-shadow(3px 5px 2px #0e0e0e);
+}
+
+#ring {
+    width: 22vw;
+    height: 22vw;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    position: absolute;
+}
+
+@media screen and (min-width: 400px) and (max-width:600px) {
+    #ring {
+        width: 70vw;
+        height: 70vw;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width:1200px) {
+    #ring {
+        width: 35vw;
+        height: 35vw;
+    }
+}
+
+#ring:nth-child(1) {
+    border-bottom: 8px solid rgb(255, 196, 34);
+    animation: rotate1 2s linear infinite;
+}
+
+@keyframes rotate1 {
+    from {
+        transform: rotateX(50deg) rotateZ(110deg);
+    }
+
+    to {
+        transform: rotateX(50deg) rotateZ(470deg);
+    }
+}
+
+#ring:nth-child(2) {
+    border-bottom: 8px solid rgb(255, 255, 255);
+    animation: rotate2 2s linear infinite;
+}
+
+@keyframes rotate2 {
+    from {
+        transform: rotateX(20deg) rotateY(50deg) rotateZ(20deg);
+    }
+
+    to {
+        transform: rotateX(20deg) rotateY(50deg) rotateZ(380deg);
+    }
+}
+
+#ring:nth-child(3) {
+    border-bottom: 8px solid rgb(255, 255, 255);
+    animation: rotate3 2s linear infinite;
+}
+
+@keyframes rotate3 {
+    from {
+        transform: rotateX(40deg) rotateY(130deg) rotateZ(450deg);
+    }
+
+    to {
+        transform: rotateX(40deg) rotateY(130deg) rotateZ(90deg);
+    }
+}
+
+#ring:nth-child(4) {
+    border-bottom: 8px solid rgb(255, 196, 34);
+    animation: rotate4 2s linear infinite;
+}
+
+@keyframes rotate4 {
+    from {
+        transform: rotateX(70deg) rotateZ(270deg);
+    }
+
+    to {
+        transform: rotateX(70deg) rotateZ(630deg);
+    }
+}
+
+.scrol {
+    width: 100%;
+    height: 100px;
+
+}
+
+.scrol img {
+    max-width: 40%;
+    height: 100px;
+    margin-left: 200px;
+}
+
+.card4 {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    /*  
+    -webkit-text-stroke: 7px;
+    /* بيكبر اكتر من البولد */
+}
+
+.card4 p {
+    filter: drop-shadow(3px -10px 0.5px #990000);
+    /* بيعمل ظل احسن من ال بوكس شادو */
+}
+
+.card4 {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    /*  
+    -webkit-text-stroke: 7px;
+    /* بيكبر اكتر من البولد */
+}
+
+.card4 h2 {
+    position: absolute;
+    text-align: center;
+    font-weight: 900;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    font-size: 50px;
+    color: #caff00;
+    mix-blend-mode: difference;
+}
+
+.card4 img {
+    width: 100%;
+    height: 100%;
+}
+
+.card6 {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    /*  
+    -webkit-text-stroke: 7px;
+    /* بيكبر اكتر من البولد */
+}
+
+.card6 h2 {
+    position: absolute;
+    text-align: center;
+    font-weight: 900;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+
+    font-size: 50px;
+    color: #caff00;
+    mix-blend-mode: difference;
+    -webkit-box-reflect: below 20px;
+    z-index: 20;
+
+}
+
+.card6 h3 {
+    position: absolute;
+    text-align: center;
+    font-weight: 900;
+    bottom: 100px;
+    left: 0px;
+    right: 0px;
+    font-size: 50px;
+    color: #ececec;
+    mix-blend-mode: difference;
+    -webkit-box-reflect: below 20px;
+
+}
+
+.card6 img {
+    width: 100%;
+    height: 100%;
+}
+
+.card7 {
+    width: 300px;
+    height: 300px;
+    position: relative;
+
+}
+
+.card7 h2 {
+    position: absolute;
+    text-align: center;
+    font-weight: 900;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    font-size: 60px;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #005d9bf5;
+    /* ده بيعمل  كلام مفرغ */
+
+    background: url(../kazuha-kazuha-genshin.gif);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #0e0e0e00;
+
+    /* ده بيعمل خلفية صورة او فيديو او gif  */
+}
+
+.card7 img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.card8 {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    background-image: linear-gradient(-45deg, #ffffff 50%, transparent 50%),
+        url(../imges/wallpaperflare.com_wallpaper\ \(1\).jpg);
+    border: 20px solid;
+    border-radius: 3%;
+    border-image: linear-gradient(0deg, rgb(7, 7, 7) 0%, rgb(7, 255, 255) 50%, rgb(0, 0, 0) 100%)1 1 1 1;
+    animation-name: no;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-iteration-count: infinite;
+
+}
+
+
+
+
+@keyframes no {
+
+    50% {
+        border-image: linear-gradient(90deg, rgb(7, 7, 7) 0%, rgb(208, 255, 0) 50%, rgb(0, 0, 0) 100%)1 1 1 1;
+    }
+}
+
+
+
+.card8 h2 {
+    position: absolute;
+    text-align: center;
+    font-weight: 900;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+
+    color: #caff00;
+    font-size: 70px;
+    background-size: cover;
+    background: url(../kazuha-kazuha-genshin.gif);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    /* لازم اللوكشة دي مع بعض كدا 
+    background-size: cover;
+    background: url(../kazuha-kazuha-genshin.gif);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+
+}
+
+#myAudio {
+    /* opacity: 1; */
+}
+
+
+.card9 {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    background-color: steelblue;
+
+}
+
+.card9::before {
+    content: 'DEV';
+    animation: anim 2s infinite;
+
+
+}
+
+@keyframes anim {
+    50% {
+        content: "MO";
+    }
+}
+
+.card10 {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.637);
+
+}
+
+:root {
+    --main_color1: #ffee00;
+    --main_color2: #00a6c4;
+}
+
+.header p {
+    font-size: 5em;
+    font-weight: 600;
+    color: #008799f5;
+    /* -webkit-text-stroke-width:2px;
+    -webkit-text-stroke-color: #ffffff; */
+}
+
+.header {
+
+    height: 80vh;
+}
+
+.header h1 {
+    color: #fafafa;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #fffffff5;
+ border-bottom: 10px solid;
+ border-image:  linear-gradient(90deg,#009688 50% ,#F44336 50%) 20;
+}
+
+.header h1 span {
+    color: var(--main_color1);
+    
+}
+.header h1 span:hover {
+   transform: rotate(-10deg) translate(-100px , -7px) scale (1.2);
+    
+}
+
+nav {
+    width: 100%;
+    height: 8vh;
+    background-color: #00000056;
+}
+
+nav img {
+
+    height: 100%;
+    filter:  drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.39)) drop-shadow(-10px -10px 20px rgb(255, 255, 255)) drop-shadow(2px 2px 10px rgb(9, 255, 132));
+    filter: drop-shadow(2px 4px 6px black);
+    background-color: var(--main_color1);
+    clip-path: circle(100px at center  #235);
+
+}
+
+
+
+.imgo-right  {
+    animation-name: imgo-right ;
+ animation-duration: 1.5s;
+ animation-timing-function: ease-in-out;
+ width: 40%;
+}
+
+
+@keyframes imgo-right {
+       0% { opacity: 0;
+    transform:translateX(100%)}
+  
+       100% { opacity: 1;
+    transform:translateX(0px)}
+     
+}
+.imgo-left{
+    animation-name: imgo-left;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    width: 60%;
+}
+    @keyframes imgo-left {
+        0% { opacity: 0;
+     transform:translatex(-100%)}
+   
+        100% { opacity: 1;
+     transform:translateX(0)}
+      
+ }
+
+
+
+
+nav ul {
+    width: calc(100% - 9rem);
+    height: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+   
+}
+
+li {
+
+    font-size: 22px;
+    font-weight: 800;
+    margin-right: 5%;
+    
+
+}
+
+li:nth-of-type(1) a {
+
+    font-size: 35px;
+    font-weight: 900;
+    color: var(--main_color2) !important;
+
+}
+
+li a {
+    text-decoration: none;
+    color: #ffffff !important;
+    
+}
+
+.scrol {
+    height: 12vh;
+    background-color: rgb(38, 122, 133);
+    box-shadow: inset 5px 5px 50px 5px #00000070;
+    padding: 10px;
+}
+
+.MOO{
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: url(../imges/796832.jpg);
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-weight: 900;
+    color: #caff00;
+    font-size: 9vw;
+    
+}
+
+
+
+.MO{
+    background-image: url(../imges/1.jpg);
+    background-position: 100% 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 0.9vw;
+    
+   
+}
+
+
+
+/* تغيير شكل المؤشر */
+.custom-cursor {
+    cursor: url('path/to/image.png'), auto;
+  }
+  
+  /* تغيير لون المؤشر */
+  /* .custom-cursor {
+    cursor: pointer;
+    color: red;
+  } */
+  
+  /* تغيير حجم المؤشر */
+  /* .custom-cursor {
+    cursor: pointer;
+    font-size: 24px;
+  } */
+  
+  /* تغيير شكل المؤشر عند التحريك فوق رابط */
+  a:hover {
+    cursor: pointer;
+  }
+  
+  /* تغيير شكل المؤشر عند النقر */
+  /* .custom-cursor:active {
+    cursor: pointer;
+  } */
+  
+  /* تعطيل المؤشر */
+  /* .custom-cursor {
+    cursor: none;
+  } */
+
+
+ .mouse{
+    cursor: url(../imges/icons8-select-cursor-50.png), auto;
+
+  }
+  .mouse:hover a{
+    cursor: url(../imges/icons8-click-67.png), auto;
+   
+  }
+  /* a:target  {
+ border: 2px solid #D4D4D4;
+  background-color: #fff;
+  } */
+/* بيدي لون للبوتون ال في نفس الصفحة  */
+
+
+
+
+.momo{
+    color: #ffffff;
+    font-size: 50px;
+    /* writing-mode: vertical-rl;
+    text-orientation: mixed; */
+    /* text-orientation: upright; */
+  
+    text-emphasis-style:"\272D";
+    text-emphasis-position: under ;
+    text-emphasis-color:var(--main_color1) ;
+
+/* outline: 0.5px solid yellow;
+    outline-offset: 0.5px; */
+
+
+
+    text-transform: lowercase;
+}
+
+
+
+
+.cool{
+    background-image: url("../shocked-shock.gif") , url("../wallpaper.gif");
+    background-repeat: no-repeat;
+    background-size: 50% 50%;
+    background-position: left , right;
+}
